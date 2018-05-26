@@ -1,0 +1,233 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<!--
+	Usable by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block head_title %}MySite{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="gettemplates.co" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}" />
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{% static 'css/themify-icons.css' %}" />
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'js/respond.min.js' %}"></script>
+	<![endif]-->
+	
+	{% block head_extra %}
+
+	{% endblock %}
+
+	</head>
+	<body>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div id="gtco-logo"><a href="index.html">Usable <em>.</em></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1 main-nav">
+					<ul>
+						<li class="btn-cta"><a href="#" class="external" title="Login"><span>Login</span></a></li>
+						<li class="btn-cta"><a href="#" class="external" title="Register"><span>Register for free</span></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+
+	<div id="gtco-features" class="border-bottom" data-section="features">
+	<div class="gtco-container">
+
+
+			<div class="row">
+			
+			<div class="col-md-5 text-center">	
+			<form>
+		    	<div class="input-group">
+		      		<button type="button" class="btn btn-success">Submit Your Story <i class="fas fa-pencil-alt"></i></button>
+		    	</div>
+		  	</form>
+			</div>
+
+
+			<div class="col-md-4 text-center">	
+			</div>
+
+
+			<div class="col-md-3 text-center">	
+			<form>
+		    	<div class="input-group">
+		      		<span class="input-group-addon"><i class="fas fa-search"></i></span>
+		      		<input id="msg" type="text" class="form-control" name="msg" placeholder="Search here....">
+		    	</div>
+		  	</form>
+			</div>
+
+			</div>
+
+
+		<div class="row">	
+				<div class="col-md-2 col-md-offset-1 text-center">
+					<br><br>
+				</div>
+		</div>
+
+
+
+	{% include "messages_display.html" %}
+	<div class="container">
+	{% block content %} {% endblock %}
+	</div>
+
+
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+			<div class="row row-pb-md">
+
+				<div class="col-md-4">
+					<div class="gtco-widget">
+						<h3>About Us</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque ab?</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-md-push-1">
+					<div class="gtco-widget">
+						<h3>Links</h3>
+						<ul class="gtco-footer-links">
+							<li><a href="#">Knowledge Base</a></li>
+							<li><a href="#">Career</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Terms of services</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="gtco-widget">
+						<h3>Get In Touch</h3>
+						<ul class="gtco-quick-contact">
+							<li><a href="#"><i class="icon-phone"></i> +1 234 567 890</a></li>
+							<li><a href="#"><i class="icon-mail2"></i> info@gettemplates.co</a></li>
+							<li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
+						<small class="block">Designed by <a href="http://gettemplates.co/" target="_blank">GetTemplates.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+					</p>
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".content-markdown").each(function(){
+				var content = $(this).text()
+				var markedContent = marked(content)
+				$(this).html(markedContent)
+			})
+
+			$(".content-markdown img").each(function(){
+				$(this).addClass("img-responsive")
+			})
+		})
+
+	</script>
+
+	</body>
+</html>
+
